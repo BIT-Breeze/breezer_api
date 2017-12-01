@@ -3,6 +3,7 @@ package com.breezer.api.vo;
 public class UserVo {
 	private long idx;
 	private String ID;
+	private String PW;
 	private String nickName;
 	private String gender;
 	private String birth;
@@ -22,6 +23,12 @@ public class UserVo {
 	}
 	public void setID(String iD) {
 		ID = iD;
+	}
+	public String getPW() {
+		return PW;
+	}
+	public void setPW(String pW) {
+		PW = pW;
 	}
 	public String getNickName() {
 		return nickName;
@@ -63,9 +70,12 @@ public class UserVo {
 	
 	@Override
 	public String toString() {
-		return "UserVo [idx=" + idx + ", ID=" + ID + ", nickName=" + nickName + ", gender=" + gender + ", birth="
-				+ birth + ", job=" + job + ", nation=" + nation + ", joinDate=" + joinDate + "]";
+		return "UserVo [idx=" + idx + ", ID=" + ID + ", PW=" + PW + ", nickName=" + nickName + ", gender=" + gender
+				+ ", birth=" + birth + ", job=" + job + ", nation=" + nation + ", joinDate=" + joinDate + "]";
 	}
+	
+	
+
 	
 	
 }
